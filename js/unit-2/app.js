@@ -105,3 +105,50 @@ if (quarter(0) % 3 === 0 ) {
 }
 
 // 2.9
+
+// Write your function starting on line 3
+
+var perimeterBox = function(length, width) {
+    return length + length + width + width;
+    };
+perimeterBox(3,9)
+
+// 2.10 - Variables defined outside a function are accessible anywhere once they have been declared. They are called global variables and their scope is global.
+
+var my_number = 7; //this has global scope
+
+var timesTwo = function(number) {
+   var my_number = number * 2;
+    console.log("Inside the function my_number is: ");
+    console.log(my_number);
+}; 
+
+timesTwo(7);
+
+console.log("Outside the function my_number is: ")
+console.log(my_number);
+
+// 2.11 
+
+var nameString = function (name) {
+	return ("Hi, I am" + " " + name);
+};
+nameString("James");
+console.log ("name");
+
+// 2.12
+
+var sleepCheck = function (numHours){
+    if (numHours >= 8) {
+    return "You're getting plenty of sleep! Maybe even too much!";
+    }
+    else {
+        return "Get some more shut eye!";
+    }
+};
+sleepCheck(10);
+sleepCheck(5);
+sleepCheck(8);
+
+
+
