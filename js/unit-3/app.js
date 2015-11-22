@@ -50,3 +50,26 @@ for (var i = 100; i >= 5; i -= 5) {
 }
 
 // 3.9 Arrays
+var junk = ["james", "is", 2, 5];
+console.log(junk)
+
+// 3.10 
+var junkData = ["Eddie Murphy", 49, "peanuts", 31];
+
+console.log(junkData[3])
+
+// 3.11
+
+var cities = ["Melbourne", "Amman", "Helsinki", "NYC", "Denver", "Boulder", "Seattle", "Portland", "Austin"];
+
+for (var i = 0; i < cities.length; i++) {
+    console.log("I would like to visit " + cities[i]);
+}
+
+// 3.12
+
+var names = ["James", "Tyler", "Zach", "Jamal", "Kevin"]
+
+for (var i = 0; i < names.length; i++) {
+    console.log("I know someone called " + names[i]);
+}
