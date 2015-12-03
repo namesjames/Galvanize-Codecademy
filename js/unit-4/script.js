@@ -55,6 +55,55 @@ soloLoop(true);
     
 // 4.7 
 
+// 4.8 
 
+for (x=0;x<5;x++) {
+    console.log("hi")
+}
+var understand = 3;
+while(understand){
+	console.log("I'm learning while loops!");
+	understand = false;
+}
 
+// 4.9 do/while
+
+var loopCondition = false;
+
+do {
+	console.log("I'm gonna stop looping 'cause my condition is " + loopCondition + "!");	
+} while (loopCondition);
+
+// 4.10
+
+var test = 1;
+
+var getToDaChoppa = function(){
+  // Write your do/while loop here!
+do { 
+    console.log("You should ");
+    test =0;
+} while(test);
+};
+getToDaChoppa();
+
+// 4.11
+
+// For
+for (var x=1;x<5;x++) {
+    console.log(x);
+};
+
+var apples = true;
+// While
+while (apples) {
+    console.log("no");
+    apples = false;
+};
+// Do
+var test = 1;
+do { 
+    console.log("You should ");
+    test =0;
+} while(test);
 
