@@ -222,3 +222,51 @@ var susan = new Person("Susan Jordan", 25);
 
 var george = new Person("George Washington", 275);
 
+function Cat(age, color) {
+  this.age = age;
+  this.color = color;
+}
+
+// make a Dog constructor here
+function Dog(age, color, breed, weight) {
+    this.age =age;
+    this.color = color;
+    this.breed = breed;
+    this.weight = weight;
+}
+
+function Person(name,age) {
+  this.name = name;
+  this.age = age;
+  this.species = "Homo Sapiens";
+}
+
+var sally = new Person ();
+sally.name= "Sally Bowles";
+sally.age=39;
+sally.species = "Homo Sapiens";
+
+var holden =new Person ();
+holden.name = "Holden Caulfield";
+holden.age =16;
+holden.species = "Homo Sapiens";
+
+console.log("sally's species is " + sally.species + " and she is " + sally.age +" years old" );
+console.log("holden's species is " + holden.species + " and he is " + holden.age + " years old");
+
+function Rectangle(height, width) {
+  this.height = height;
+  this.width = width;
+  this.calcArea = function() {
+      return this.height * this.width;
+  };
+  // put our perimeter function here!
+  this.calcPerimeter = function() {
+      return (2 * this.height) + (2 *this.width);
+  }
+};
+
+var rex = new Rectangle(7,3);
+var area = rex.calcArea();
+var perimeter = rex.calcPerimeter();
+
