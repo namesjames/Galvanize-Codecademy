@@ -1,32 +1,22 @@
 var bob = {
     firstName: "Bob",
     lastName: "Jones",
-    phoneNumber: "(650) 777-777",
+    phoneNumber: "(650) 777-7777",
     email: "bob.jones@example.com"
 };
-
-console.log(bob.firstName);
-console.log(bob.lastName);
-console.log(bob.email);
 
 var mary = {
     firstName: "Mary",
     lastName: "Johnson",
-    phoneNumber: "(650) 888 - 8888",
+    phoneNumber: "(650) 888-8888",
     email: "mary.johnson@example.com"
 };
 
 var contacts = [bob, mary];
 
-console.log(mary.phoneNumber);
-
-var printPerson = function(person) {
-    console.log(person.firstName + " " + person.lastName);    
-};
-
-printPerson(contacts[0]);
-
-printPerson(contacts[1]);
+function printPerson(person) {
+    console.log(person.firstName + " " + person.lastName);
+}
 
 function list() {
 	var contactsLength = contacts.length;
@@ -34,3 +24,27 @@ function list() {
 		printPerson(contacts[i]);
 	}
 }
+
+function search(lastName) {
+    var contactsLength = contacts.length;
+    for (i=0; i< contacts.length; i++) {
+        if (contacts[i].lastName === lastName) {
+            printPerson(contacts[i]);
+}
+    }
+};
+
+var add = function(firstName, lastName, email, phoneNumber){
+
+    contacts[contacts.length] = {
+    firstName : firstName,
+    lastName : lastName,
+    email : email,
+    phoneNumber : phoneNumber
+    }
+    }; 
+        
+    add ("James", "Conti", "james@gmail.com", 1234567890);
+    
+    list();
+    
