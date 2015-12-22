@@ -34,3 +34,22 @@ var james = {
 james.speak("great");
 james.speak("just okay");
 
+var james = {
+    job: "programmer",
+    married: false,
+    sayJob: function() {
+        // complete this method
+        console.log("Hi, I work as a " + james.job);
+    }
+};
+
+// james' first job
+james.sayJob();
+
+// change james' job to "super programmer" here
+james.job = "super programmer";
+
+// james' second job
+james.sayJob();
+
+
