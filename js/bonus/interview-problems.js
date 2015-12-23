@@ -63,7 +63,7 @@ function greatestCommonDivisor(a, b){
   var divisor = 2, 
       greatestDivisor = 1;
 
-  //if u pass a -ve number this will not work. fix it dude!!
+//if u pass a -ve number this will not work. fix it dude!!
   if (a < 2 || b < 2)
      return 1;
   
@@ -100,3 +100,16 @@ function removeDuplicate(arr){
 
 > removeDuplicate([1,3,3,3,1,5,6,7,8,1]);
   = [1, 3, 5, 6, 7, 8]
+  
+// String Reversal
+
+function reverse(str){
+  var rtnStr = '';
+  for(var i = str.length-1; i>=0;i--){
+    rtnStr +=str[i];
+  }
+  return rtnStr;
+}
+
+> reverse('you got the job, congrats!');
+  = "!stargnoc ,boj eht tog uoy"
