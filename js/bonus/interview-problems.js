@@ -125,3 +125,32 @@ function reverse(str){
   }
   return rtnStr.join('');
 }
+
+// reversal in recursive 
+
+function reverse (str) {
+    if (str === "") {
+        return "";
+    } else {
+        return reverse(str.substr(1)) + str.charAt(0);
+    }
+}
+   
+// as method
+
+function reverse(str){
+  if(!str || str.length <2) return str;
+  
+  return str.split('').reverse().join('');
+}
+
+// as extension
+
+String.prototype.reverse = function (){
+  if(!this || this.length <2) return this;
+  
+  return this.split('').reverse().join('');
+}
+
+> 'abc'.reverse();
+  = 'cba'
