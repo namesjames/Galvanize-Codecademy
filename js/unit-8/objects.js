@@ -169,7 +169,6 @@ function Cat(name, breed) {
     this.breed = breed;
 }
 
-// let's make some cats!
 var cheshire = new Cat("Cheshire Cat", "British Shorthair");
 var gary = new Cat("Gary", "Domestic Shorthair");
 
@@ -179,3 +178,15 @@ Cat.prototype.meow = function () {
 
 cheshire.meow();
 gary.meow();
+
+function Animal(name, numLegs) {
+this.name = name;
+this.numLegs = numLegs;
+};
+
+Animal.prototype.sayName = function() {
+    console.log("Hi my name is " + this.name);
+};
+
+var penguin = new Animal("Captain Cook", 2);
+penguin.sayName();
