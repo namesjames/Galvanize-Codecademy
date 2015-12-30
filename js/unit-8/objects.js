@@ -190,3 +190,43 @@ Animal.prototype.sayName = function() {
 
 var penguin = new Animal("Captain Cook", 2);
 penguin.sayName();
+
+function Animal(name, numLegs) {
+    this.name = name;
+    this.numLegs = numLegs;
+}
+Animal.prototype.sayName = function() {
+    console.log("Hi my name is " + this.name);
+};
+
+
+function Penguin(name, numLegs) {
+    this.name = name;
+    this.numLegs = numLegs;
+}
+
+Penguin.prototype.sayName = function() {
+    console.log("Hi my name is " + this.name);
+};
+
+var theCaptain = new Penguin("Captain Cook", 2);
+theCaptain.sayName();
+
+function Animal(name, numLegs) {
+    this.name = name;
+    this.numLegs = numLegs;
+}
+Animal.prototype.sayName = function() {
+    console.log("Hi my name is " + this.name);
+};
+
+function Penguin(name, numLegs) {
+    this.name = name;
+    this.numLegs = 2;
+}
+
+Penguin.prototype = new Animal ();
+
+var penguin = new Penguin("James");
+penguin.sayName( );
+
