@@ -230,3 +230,36 @@ Penguin.prototype = new Animal ();
 var penguin = new Penguin("James");
 penguin.sayName( );
 
+function Penguin(name) {
+this.name = name;
+this.numLegs = 2;
+}
+
+function Emperor (name) {
+this.name = name;
+}
+Emperor.prototype = new Penguin (); 
+var emperor = new Emperor ( "e" );
+console.log(emperor.numLegs);
+
+function Animal(name, numLegs) {
+    this.name = name;
+    this.numLegs = numLegs;
+    this.isAlive = true;
+}
+function Penguin(name) {
+    this.name = name;
+    this.numLegs = 2;
+}
+function Emperor(name) {
+    this.name = name;
+    this.saying = "Waddle waddle";
+}
+
+Penguin.prototype = new Animal();
+Emperor.prototype = new Penguin();
+
+var myEmperor = new Emperor("Jules");
+
+console.log(myEmperor.saying);
+console.log(emperor.numLegs);
