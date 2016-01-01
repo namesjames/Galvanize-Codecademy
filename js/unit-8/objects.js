@@ -263,3 +263,17 @@ var myEmperor = new Emperor("Jules");
 
 console.log(myEmperor.saying);
 console.log(emperor.numLegs);
+
+function Person(first,last,age) {
+   this.firstName = first;
+   this.lastName = last;
+   this.age = age;
+}
+
+var john = new Person('John','Smith',30);
+var myFirst = john.firstName;
+var myLast = john.lastName;
+
+var myAge = john.age
+
+
