@@ -14,7 +14,6 @@ var gabby = new Person("student", true);
 function Person(job, married) {
     this.job = job;
     this.married = married;
-    // add a "speak" method to Person!
     this.speak = function() {
         console.log("Hello!");
     };
@@ -38,7 +37,6 @@ var james = {
     job: "programmer",
     married: false,
     sayJob: function() {
-        // complete this method
         console.log("Hi, I work as a " + james.job);
     }
 };
@@ -276,4 +274,11 @@ var myLast = john.lastName;
 
 var myAge = john.age
 
-
+function Person(first,last,age) {
+   this.firstname = first;
+   this.lastname = last;
+   this.age = age;
+   var bankBalance = 7500;
+}
+var john = new Person('john','smith',22);
+console.log(john.bankBalance);
