@@ -74,3 +74,14 @@ cashRegister.scan("chocolate;
 
 //Show the total bill
 console.log('Yourl is '+ cashRegister.total);
+
+function StaffMember(name,discountPercent) {
+this.name = name,
+this.discountPercent = discountPercent
+}
+
+var sally = new StaffMember("Sally",5);
+var bob = new StaffMember("Bob",10);
+
+//Create a StaffMember for yourself called me
+var me = new StaffMember("JD",20);
