@@ -13,3 +13,5 @@ $(document).ready(function() {
 $(document).ready(function(){
      $('div').slideDown('slow');
 });
+
+$(document).ready();
