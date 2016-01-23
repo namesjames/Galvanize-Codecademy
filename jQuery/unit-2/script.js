@@ -7,3 +7,8 @@ $(document).ready(function() {
         $('div').fadeOut('slow');
     });
 });
+
+$(document).ready(function() {
+var $target = $('li:nth-child(4)');
+    $target.fadeOut('fast');
+});
