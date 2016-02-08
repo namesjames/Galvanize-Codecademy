@@ -15,10 +15,15 @@ $(document).ready( function() {
     function(){
     $(this).removeClass('active');    
     }
-  );
+    );
 
-$('input').focus(function() {
-$(this).css('outline-color','#FF0000');
-})
+   $('input').focus(function() {
+   $(this).css('outline-color','#FF0000');
+   })
 
+
+   $(document).keydown(function(){
+   $('div').animate({left: '+=10px'},500);
+   });
+   
 });
